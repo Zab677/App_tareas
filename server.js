@@ -23,7 +23,7 @@ app.use(express.static('public')); // Sirve archivos estáticos (HTML, CSS, JS)
 
 // 4. BASE DE DATOS EN MEMORIA
 // Simulamos una base de datos con un array
-/*
+
 let tareas = [
   {
     id: 1,
@@ -44,7 +44,7 @@ let tareas = [
     fecha: new Date().toISOString()
   }
 ];
-*/
+
 let contadorId = 3; // Para asignar IDs únicos
 
 // 5. RUTAS DEL API (ENDPOINTS)
@@ -205,3 +205,4 @@ app.listen(PORT, () => {
   `);
 
 });
+
