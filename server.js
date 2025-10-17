@@ -24,8 +24,8 @@ app.use(express.static('public')); // Sirve archivos estáticos (HTML, CSS, JS)
 // 4. BASE DE DATOS EN MEMORIA
 // Simulamos una base de datos con un array
 
-let tareas = [
-  {
+let tareas = [];
+ /* {
     id: 1,
     titulo: 'Aprender Node.js',
     descripcion: 'Completar el tutorial de Node.js',
@@ -43,7 +43,7 @@ let tareas = [
     completada: false,
     fecha: new Date().toISOString()
   }
-];
+];*/
 
 let contadorId = 3; // Para asignar IDs únicos
 
@@ -205,4 +205,5 @@ app.listen(PORT, () => {
   `);
 
 });
+
 
